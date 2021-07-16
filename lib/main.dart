@@ -8,6 +8,8 @@ import 'Providers/products.dart';
 import 'Providers/cart.dart';
 import 'Providers/orders.dart';
 import 'screens/orders_screen.dart';
+import 'screens/user_products_screen.dart';
+import 'screens/edit_product_screen.dart';
 
 void main() {
   return runApp(ShopApp());
@@ -43,6 +45,12 @@ class ShopApp extends StatelessWidget {
           },
           OrdersScreen.routeName: (context) {
             return OrdersScreen();
+          },
+          UserProductsScreen.routeName: (context) {
+            return UserProductsScreen();
+          },
+          EditProductScreen.routeName: (context) {
+            return EditProductScreen();
           }
         },
         home: ProductsOverviewScreen(),
